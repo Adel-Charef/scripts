@@ -1,7 +1,9 @@
 #! usr/bin/python3
-# Open sevral google search results in new tabs
+# Open several google search results in new tabs
 
-import sys, requests, webbrowser
+import sys
+import requests
+import webbrowser
 from bs4 import BeautifulSoup
 
 query = sys.argv[1:]
@@ -16,7 +18,7 @@ print("""
          |            My Search Engine           |
          *****************************************
          """)
-         
+
 response = requests.get(URL, headers=headers)
 print("Googling.....\n")
 
@@ -36,9 +38,7 @@ for g in soup.find_all("div", class_="r"):
 print("*****************************************")
 print("              Results........            ")
 print("*****************************************\n")
-for i in range(min(8 ,len(results))):
+for i in range(min(8, len(results))):
     print(f"{i}-- {results[i]}\n")
 selected_result = int(input(">> -Select a Result: "))
 webbrowser.open(results[selected_result])
-    
-    

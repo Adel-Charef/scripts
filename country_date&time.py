@@ -1,18 +1,19 @@
-from datetime import datetime 
+from datetime import datetime
 import pytz
 
 color = {
-    'RED'              : '\033[1;91m',
-    'UNDERLINE_PURPLE' : '\033[4;34m',
-    'GREEN'            : '\033[1;92m',
-    'YELLOW'           : '\033[1;33m',
-    'CYAN'             : '\033[0;36m',
-    'PURPLE'           : '\033[0;34m',
-    'MAGENTA'          : '\033[0;35m',
-    'DEFAULT'          : '\033[0m',
-    'TWITTER_BLUE'     : '\033[38;5;33m',
+    'RED': '\033[1;91m',
+    'UNDERLINE_PURPLE': '\033[4;34m',
+    'GREEN': '\033[1;92m',
+    'YELLOW': '\033[1;33m',
+    'CYAN': '\033[0;36m',
+    'PURPLE': '\033[0;34m',
+    'MAGENTA': '\033[0;35m',
+    'DEFAULT': '\033[0m',
+    'TWITTER_BLUE': '\033[38;5;33m',
 }
-country_zones = ["Africa/Algiers", "Africa/Casablanca", "Africa/Tunis", "Africa/Cairo", "Africa/Khartoum"]
+country_zones = ["Africa/Algiers", "Africa/Casablanca",
+                 "Africa/Tunis", "Africa/Cairo", "Africa/Khartoum"]
 
 country_time_zones = []
 

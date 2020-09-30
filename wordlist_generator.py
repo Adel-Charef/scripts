@@ -4,7 +4,8 @@ import string
 min_len = int(input("Enter minimum length of password: "))
 max_len = int(input("Enter maximum length of password: "))
 counter = 0
-character = string.ascii_lowercase + string.ascii_uppercase + string.digits + string.punctuation
+character = string.ascii_lowercase + \
+    string.ascii_uppercase + string.digits + string.punctuation
 
 wordlist_file = open("wordlist.txt", "w")
 
