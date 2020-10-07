@@ -10,7 +10,7 @@ SUBJECT = input("Subject: ")
 MESSAGE = input("Message: ")
 
 
-def main(subject=SUBJECT, message=MESSAGE, sender=SENDER_EMAIL, receiver=RECEIVER):
+def sendMail(subject=SUBJECT, message=MESSAGE, sender=SENDER_EMAIL, receiver=RECEIVER):
     try:
         msg = MIMEText(message)
         msg["Subject"] = subject
@@ -30,4 +30,4 @@ def main(subject=SUBJECT, message=MESSAGE, sender=SENDER_EMAIL, receiver=RECEIVE
 
 
 if __name__ == "__main__":
-    main()
+    sendMail()
