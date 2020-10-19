@@ -14,8 +14,8 @@ def readOutLoud(book):
 
     for num in range(0, num_pages):
         page = pdf_reader.getPage(num)
+        play.setProperty('rate', 130)
         data = page.extractText()
-        play.setProperty("rate", 130)
         play.say(data)
         play.runAndWait()
 
