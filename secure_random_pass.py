@@ -3,6 +3,8 @@ import secrets
 import string
 
 # Making a random secure password
+
+
 def securePassword():
     stringSource = string.ascii_letters + string.digits + string.punctuation
     password = secrets.choice(string.ascii_lowercase)
