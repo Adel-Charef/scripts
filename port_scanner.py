@@ -66,8 +66,8 @@ def main(threads, mode):
     for thread in thread_list:
         thread.join()
 
-    print("The open ports are: ", open_ports)
+    print("The open ports are:", open_ports)
 
 
 if __name__ == "__main__":
-    main(100, 1)
+    main(100, 4)
