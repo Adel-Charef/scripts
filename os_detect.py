@@ -1,6 +1,6 @@
 import platform
 
-def Detect():
+def detect():
     os = platform.system()
     release = platform.release()
     pv = platform.python_version()
@@ -19,5 +19,5 @@ def Detect():
     }
     return data
 
-print(Detect())
+detect()
 
